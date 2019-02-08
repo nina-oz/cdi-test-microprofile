@@ -41,4 +41,7 @@ public class TestConfigListener {
         startingEvent = null;
     }
 
+    public boolean testActive() {
+        return startingEvent != null;
+    }
 }
