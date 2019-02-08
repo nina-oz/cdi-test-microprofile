@@ -38,10 +38,6 @@ public class TestConfigListener {
 
     protected void observeFinished(@Observes @TestEvent(EventType.FINISHED) ExtensionContext testEvent) {
         finishingEvent = null;
-        startingEvent = null;
     }
 
-    public boolean testActive() {
-        return startingEvent != null;
-    }
 }
